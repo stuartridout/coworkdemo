@@ -2992,7 +2992,7 @@
     currentLang = (lang==='en') ? 'en' : 'fr';
     try{ localStorage.setItem('cowork-lang', currentLang); }catch(e){}
     document.documentElement.setAttribute('lang', currentLang);
-    document.title = (currentLang==='en') ? 'A day with Cowork — The job journeys' : 'Une journée avec Cowork — Les parcours métiers';
+    document.title = (currentLang==='en') ? 'A day with Cowork' : 'Une journée avec Cowork — Les parcours métiers';
     document.querySelectorAll('.parcours-frame').forEach(function(f){
       try{ f.contentWindow.setLang(currentLang); }catch(e){}
     });
